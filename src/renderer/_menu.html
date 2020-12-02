@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../assets/vendor/bootstrap5.0alpha1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../assets/styles/fy.css">
+        <link rel="stylesheet" href="../assets/styles/_menu.css">
+    </head>
+
+    <body>
+
+            <div class="app-brand text-center">
+                <div class="app-icon iconfont text-secondary fy-text-4xl pt-5">&#xe665;</div>
+                <div class="fy-flex fy-top fy-center">
+                    <div class="app-name text-secondary font-weight-lighter fy-text-2xl">千鸟数易</div>
+                    <div class="app-version text-white-50 fy-text-xs ml-2">V 1.0</div>
+                </div>
+            </div>
+            <div class="f-nav mt-5">
+                <a class="f-nav-item active" href="_apps.html" target="main">应用</a>
+                <a class="f-nav-item" href="#">插件</a>
+                <a class="f-nav-item" href="#">运行环境</a>
+                <a class="f-nav-item" href="#">账户与设置</a>
+            </div>
+
+
+    </body>
+    <script src="../assets/scripts/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".f-nav a").on("click", function(){
+                $(".f-nav a.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+    </script>
+
+</html>
